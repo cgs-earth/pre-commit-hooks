@@ -4,5 +4,6 @@ repos:
       - id: add-header
         name: Add copyright header
         entry: python3 pre_commit_hooks/add_header.py
-        language: system
-        files: \.py$
+        language: python
+        files: ^Dockerfile.*$|\.(py|yaml|yml|sh|R)$
+
