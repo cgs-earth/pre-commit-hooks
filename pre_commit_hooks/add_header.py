@@ -95,7 +95,10 @@ def process_file(filepath):
         if header_end_idx > 0:
             content = content[header_end_idx:]  # Remove existing header
 
-        path.write_text(new_header + "\n" + "\n".join(content) + "\n")
+        if content:
+            path.write_text(new_header + "\n" + "\n".join(content) + "\n")
+        else:
+            path.write_text(new_header + "\n")
 
 
 if __name__ == "__main__":
