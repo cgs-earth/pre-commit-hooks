@@ -11,6 +11,7 @@
 from setuptools import setup
 from pathlib import Path
 
+
 def read(filename):
     """read file contents"""
 
@@ -20,6 +21,7 @@ def read(filename):
         contents = fh.read().strip()
 
     return contents
+
 
 setup(
     name="pre-commit-hooks",
