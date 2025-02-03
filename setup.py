@@ -26,10 +26,10 @@ def read(filename):
 setup(
     name="pre-commit-hooks",
     version="0.1.0",
-    py_modules=["pre_commit_hooks.add_header"],
+    py_modules=["src.add_header"],
     entry_points={
         "console_scripts": [
-            "add-header=pre_commit_hooks.add_header:main",
+            "add-header=src.add_header:main",
         ],
     },
     install_requires=read('requirements.txt').splitlines(),
