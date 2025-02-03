@@ -10,9 +10,9 @@
 
 -   id: add-header
     name: Add copyright header
-    description: Adds a copyright header to Python files
-    entry: python3 pre_commit_hooks/add_header.py
-    language: python
+    description: Adds a copyright header to files
+    entry: add-header
+    language: system
     types: [file]
     files: ^Dockerfile.*$|\.(py|yaml|yml|sh|R)$
 
