@@ -15,5 +15,6 @@ repos:
         name: Add copyright header
         entry: python3 pre_commit_hooks/add_header.py
         language: python
+        types: [file]
         files: ^Dockerfile.*$|\.(py|yaml|yml|sh|R)$
 
