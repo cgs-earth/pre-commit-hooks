@@ -90,13 +90,13 @@ def process_file(filepath):
             else:
                 found = True
 
-    if found:
+    if not found:
         # Modify or prepend header
         if header_end_idx > 0:
             content = content[header_end_idx:]  # Remove existing header
 
         if content:
-            path.write_text(new_header + "\n" + "\n".join(content) + "\n")
+            path.write_text(new_header + "\n\n" + "\n".join(content) + "\n")
         else:
             path.write_text(new_header + "\n")
 
