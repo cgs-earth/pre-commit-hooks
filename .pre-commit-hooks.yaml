@@ -1,0 +1,18 @@
+# =================================================================
+#
+# Authors: Benjamin Webb <40066515+webb-ben@users.noreply.github.com>
+#
+# Copyright (c) 2025 Lincoln Institute of Land Policy
+#
+# Licensed under the MIT License.
+#
+# =================================================================
+
+-   id: add-header
+    name: Add copyright header
+    description: Adds a copyright header to Python files
+    entry: python3 pre_commit_hooks/add_header.py
+    language: python
+    types: [file]
+    files: ^Dockerfile.*$|\.(py|yaml|yml|sh|R)$
+
