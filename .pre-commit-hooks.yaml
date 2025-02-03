@@ -11,8 +11,7 @@
 -   id: add-header
     name: Add copyright header
     description: Adds a copyright header to files
-    entry: add-header
-    language: system
+    entry: add_header
+    language: python
     types: [file]
     files: ^Dockerfile.*$|\.(py|yaml|yml|sh|R)$
-

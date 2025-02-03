@@ -8,7 +8,7 @@
 #
 # =================================================================
 
-from setuptools import setup
+from setuptools import setup, find_packages
 from pathlib import Path
 
 
@@ -26,10 +26,10 @@ def read(filename):
 setup(
     name="pre-commit-hooks",
     version="0.1.0",
-    py_modules=["src.add_header"],
+    packages=find_packages("."),
     entry_points={
         "console_scripts": [
-            "add-header=src.add_header:main",
+            "add_header=src.add_header:main",
         ],
     },
     install_requires=read('requirements.txt').splitlines(),
