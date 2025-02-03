@@ -14,8 +14,7 @@ repos:
       - id: add-header
         name: Add copyright header
         description: Adds a copyright header to files
-        entry: python3 pre_commit_hooks/add_header.py
+        entry: python3 src/add_header.py
         language: python
         types: [file]
         files: ^Dockerfile.*$|\.(py|yaml|yml|sh|R)$
-
